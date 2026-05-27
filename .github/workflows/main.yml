@@ -22,7 +22,7 @@ jobs:
       - name: Build EXE
         shell: msys2 {0}
         run: |
-          gcc main.c -o calculator.exe
+          gcc test.c -o calculator.exe
 
       - name: Delete old release
         continue-on-error: true
